@@ -1,0 +1,242 @@
+@font-face {
+	font-family: 'Avenir-Black';
+	src: url('AvenirLTStd-Black.otf');
+	font-family: 'Avenir-Book';
+	src: url('AvenirLTStd-Book.otf');
+	font-family: 'Avenir-Roman';
+	src: url('AvenirLTStd-Roman.otf');
+	font-family: 'ITCAvantGardeStd';
+	src: url('ITCAvantGardeStd-BkCnObl.otf');
+	src: url('ITCAvantGardeStd-BkObl.otf');
+	src: url('ITCAvantGardeStd-BoldCnObl.otf');
+	src: url('ITCAvantGardeStd-BoldObl.otf');
+	src: url('ITCAvantGardeStd-DemiCnObl.otf');
+	src: url('ITCAvantGardeStd-DemiObl.otf');
+	src: url('ITCAvantGardeStd-MdCnObl.otf');
+	src: url('ITCAvantGardeStd-MdObl.otf');
+	src: url('ITCAvantGardeStd-XLtCn.otf');
+	src: url('ITCAvantGardeStd-XLtCnObl.otf');
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    font-family: ITCAvantGardeStd;
+}
+
+.cover-container {
+	width: 720px;
+	height: inherit;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.cover-container img {
+	box-sizing: border-box;
+	height: 100%;
+	width:100%;
+	object-fit: cover;
+}
+
+.promotion-container {
+	display: inline-block;
+	position: relative;
+	height: inherit;
+	width: 720px;
+	margin-top: 96px;
+
+	box-sizing: border-box;
+}
+
+.info-container {
+	padding-left: 120px;
+	padding-right: 106px;
+}
+
+.info-container h4 {
+	font-family: monospace;
+	font-size: 31px;
+	font-weight: 700;
+	line-height: 41px;
+	letter-spacing: 0em;
+	text-align: left;
+	word-wrap: break-word;
+	font-style: normal;
+	color: #000000; 
+	margin: 0;
+}
+
+.info-container p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: #666666;
+	word-wrap: break-word;
+	font-family: Avenir-Roman;
+	margin: 12px 0 0;
+}
+
+.info-container p a {
+	font-size: 12.8px;
+	font-weight: 900;
+	line-height: 0;
+	display: inline-block;
+	color: #000000;
+	/* border-bottom: 1px solid #000000; */
+	margin: 32px 0 0;
+}
+.item-list {
+	display: flex;
+	flex-direction: row;
+	width: 720px;
+	overflow: auto;
+	padding-left: 120px;
+	box-sizing: border-box;
+	margin: 68px 0 0;
+}
+
+.item-list::-webkit-scrollbar {
+	display: none;
+}
+
+.item-card {
+	margin-right: 32px;
+	width: 230px;
+}
+
+.item-card img {
+	width: 230px;
+	height: 310px;
+	cursor: pointer;
+}
+.item-card h5 {
+	font-weight: 400;
+	font-family: Avenir-Roman;
+	font-size: 12.8px;
+	line-height: 20.48px;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+}
+.additional-info span {
+	font-weight: 500;
+	font-family: Avenir-Roman;
+	font-size: 12.8px;
+	line-height: 20.48px;
+}
+
+.selection-circles {
+
+}
+
+.color-1 {
+    background-color: #99C4CC;
+}
+.color-2{
+    background: #CC9999;
+}
+.color-3{
+    background: #CB99CC;
+}
+.color-4 {
+    background: #A6CC99;
+}
+
+.hide-in-mobile {
+    
+}
+
+.go-forward-button {
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: calc(50% + 68px);
+    right: 24px;
+    transform: translate(-50%,-50%);
+    color: #000000;
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        flex-direction: column;
+
+    }
+    .cover-container {
+        width: 100%;
+    }
+
+    .promotion-container {
+        margin-top: 29px;
+        position: absolute;
+        top: 219px;
+        width: 100%;
+    }
+
+    .info-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .info-container p {
+        color: #ffffff;
+    }
+    .info-container h4 {
+        line-height: 26px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .item-list {
+        width: 360px;
+        padding-left: 24px ;
+        margin: 32px 0 0;
+    }
+
+    .item-card img {
+        width: 148px;
+        height: 200px;
+    }
+
+    .item-card {
+        margin-right: 12px;
+        width: 148px;
+    }
+
+    .item-card h5 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hide-in-mobile {
+        display: none;
+    }
+
+
+    .info-container p a {
+        /* border-bottom: 1px solid #000000; */
+        margin: 32px 0 0;
+    }
+
+    .additional-info {
+        flex-direction: column;
+    }
+
+    .additional-info span {
+        margin: 0;
+        padding: 0;
+    }
+
+    .selection-circles input {
+        margin: 2px 4px 2px 0px;
+    }
+  }
+
+  
